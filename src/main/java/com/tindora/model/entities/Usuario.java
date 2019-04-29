@@ -1,5 +1,7 @@
 package com.tindora.model.entities;
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,7 +27,7 @@ public class Usuario {
 	
 	@OneToMany(mappedBy = "usuario", cascade = { CascadeType.PERSIST, CascadeType.MERGE,
 			CascadeType.REMOVE }, fetch = FetchType.LAZY, orphanRemoval = true)
-	private DetalleUsuario detalleUsuario;
+	private List<DetalleUsuario> detalleUsuario;
 
 	public Integer getId() {
 		return id;
