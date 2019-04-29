@@ -9,6 +9,7 @@ public class PlaylistListaCancionDTO {
 
 	private Playlist playlist;
 	private List<Cancion> canciones;
+	
 	public Playlist getPlaylist() {
 		return playlist;
 	}

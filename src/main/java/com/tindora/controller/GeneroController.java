@@ -26,7 +26,7 @@ import com.tindora.service.GeneroService;
 
 
 @RestController
-@RequestMapping("/genero")
+@RequestMapping("/generos")
 public class GeneroController {
 	@Autowired
 	private GeneroService generoService;
