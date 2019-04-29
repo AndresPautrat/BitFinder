@@ -43,15 +43,6 @@ public class Usuario {
 		this.password = password;
 	}
 
-	public List<DetalleUsuario> getDetalleUsuario() {
-		return detalleUsuario;
-	}
-
-	public void setDetalleUsuario(List<DetalleUsuario> detalleUsuario) {
-		this.detalleUsuario = detalleUsuario;
-	}
-
-	
 	
 	
 }
