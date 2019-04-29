@@ -25,9 +25,7 @@ public class Usuario {
 	@Column(name = "password", nullable = false, length = 50)
 	private String password;
 	
-	@OneToMany(mappedBy = "usuario", cascade = { CascadeType.PERSIST, CascadeType.MERGE,
-			CascadeType.REMOVE }, fetch = FetchType.LAZY, orphanRemoval = true)
-	private List<DetalleUsuario> detalleUsuario;
+	
 
 	public Integer getId() {
 		return id;
@@ -45,13 +43,15 @@ public class Usuario {
 		this.password = password;
 	}
 
-	public DetalleUsuario getDetalleUsuario() {
+	public List<DetalleUsuario> getDetalleUsuario() {
 		return detalleUsuario;
 	}
 
-	public void setDetalleUsuario(DetalleUsuario detalleUsuario) {
+	public void setDetalleUsuario(List<DetalleUsuario> detalleUsuario) {
 		this.detalleUsuario = detalleUsuario;
 	}
+
+	
 	
 	
 }
