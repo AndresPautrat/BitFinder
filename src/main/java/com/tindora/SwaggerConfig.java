@@ -19,8 +19,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 	public static final Contact DEFAULT_CONTACT = new Contact("NULL", "NULL",
-			"hmendo81@gmail.com");
-	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("DoReMi Api Documentation", "DoReMi Api Documentation", "1.0",
+			"arian1234y@gmail.com");
+	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("BeatFinder Api Documentation", "BeatFinder Api Documentation", "1.0",
 			"PREMIUM", DEFAULT_CONTACT, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",
 			new ArrayList<VendorExtension>());
 
