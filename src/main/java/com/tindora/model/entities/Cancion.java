@@ -17,7 +17,6 @@ public class Cancion {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
-	
 	@Size(min=3,message="El nombre de la cancion debe de tener como minimo 3 caracteres")
 	@Column(name="nombre",nullable = false)
 	private String nombre;

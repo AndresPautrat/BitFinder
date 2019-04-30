@@ -1,7 +1,5 @@
 package com.tindora.model.repository;
 
-import javax.transaction.Transactional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -16,7 +14,6 @@ extends JpaRepository<UsuarioPlaylist, Integer>{
 
 	//Transaction 
 		@Modifying
-		@Transactional
 		//DML:insert, update o delete
 		@Query(value="INSERT INTO usuario_playlist(usuario_Id,playlist_id) "
 				+ "VALUES(:usuarioId,:playlistId) ",nativeQuery=true)

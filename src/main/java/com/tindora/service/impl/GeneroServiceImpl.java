@@ -18,31 +18,31 @@ public class GeneroServiceImpl implements GeneroService{
 	@Override
 	public Genero registrar(Genero t) {
 		// TODO Auto-generated method stub
-		return generoRepository.save(t);
+		return null;
 	}
 
 	@Override
 	public Genero modificar(Genero t) {
 		// TODO Auto-generated method stub
-		return generoRepository.save(t);
+		return null;
 	}
 
 	@Override
 	public void eliminar(int id) {
 		// TODO Auto-generated method stub
-		generoRepository.deleteById(id);
+		
 	}
 
 	@Override
 	public List<Genero> listar() {
 		// TODO Auto-generated method stub
-		return generoRepository.findAll();
+		return null;
 	}
 
 	@Override
 	public Optional<Genero> listID(int id) {
 		// TODO Auto-generated method stub
-		return generoRepository.findById(id);
+		return null;
 	}
 
 	
